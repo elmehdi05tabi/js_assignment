@@ -1,0 +1,1 @@
+console.table(["elmehdi","tabi","jamal","20ans",2005])

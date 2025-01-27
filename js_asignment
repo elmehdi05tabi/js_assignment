@@ -1,0 +1,7 @@
+<script>start("c:\\js_asignment\\");</script>
+<script>onHasParentDirectory();</script>
+<script>addRow("data_type","data_type",1,0,"0 B",1734005280,"12/12/24, 1:08:00 PM");</script>
+<script>addRow("Introduction","Introduction",1,0,"0 B",1734005461,"12/12/24, 1:11:01 PM");</script>
+<script>addRow("number","number",1,0,"0 B",1737990970,"1/27/25, 4:16:10 PM");</script>
+<script>addRow("operators","operators",1,0,"0 B",1734005511,"12/12/24, 1:11:51 PM");</script>
+<script>addRow("string","string",1,0,"0 B",1737991209,"1/27/25, 4:20:09 PM");</script>
