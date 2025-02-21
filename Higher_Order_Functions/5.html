@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentscro</title>
+</head>
+<body>
+    <script>
+        let nums = [2, 12, 11, 5, 10, 1, 99];
+        const initial = 1 ; 
+        var result = 0 ; 
+        let NewArray = nums.reduce(
+            function(Accumulator,Current,) {
+                if (Current%2!==0) {
+                     return  Accumulator + Current
+                    }else {
+                    return Accumulator * Current
+
+                }
+            } , initial
+        )
+        console.log(NewArray)
+    </script>
+</body>
+</html>

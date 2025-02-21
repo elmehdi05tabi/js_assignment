@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myString = "EElllzzzzzzzeroo";
+      var ch = "" ; 
+      let concat = myString.split("").filter(function (el) {
+        if (!ch.includes(el)) {
+            ch+=el ; 
+        }
+        return ch ; 
+      });
+      console.log(ch);
+      // Elzero
+    //   var ch = "" ; 
+    //   let str = myString.split("") ; 
+    //   for (let i=0 ; i<str.length;i++) {
+    //     if (str[i] === str[i+1]) {
+    //         document.write("")
+    //     }else {
+    //         ch+=str[i] ;
+    //     }
+    //   }
+    //   console.log(ch) ; 
+    </script>
+  </body>
+</html>
