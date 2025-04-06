@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <script>
+      function creatPopup() {
+        let div = document.createElement("div");
+        div.style.width = "400px";
+        div.style.position = 'relative'
+        div.style.display = "flex";
+        div.style.justifyContent = "center";
+        div.style.alignItems = "center";
+        div.style.flexDirection = "column";
+        div.style.padding = "20px";
+        div.style.background = "#ddd";
+        div.style.margin = "auto" ; 
+        div.style.marginTop = "100px" ; 
+        let h2 = document.createElement("h2");
+        h2.textContent = "Bonjour";
+        let p = document.createElement("p");
+        p.textContent = "Binevenu Chez Elmehdi Tabi";
+        let btn = document.createElement("button");
+        btn.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+        btn.style.position = "absolute" ; 
+        btn.style.top = -10 ; 
+        btn.style.right = -10 ; 
+        div.append(h2, p, btn);
+        document.body.append(div);
+        btn.onclick = function () {
+            div.remove() ; 
+        }
+      }
+      setTimeout(creatPopup,5000) ; 
+    </script>
+  </body>
+</html>
