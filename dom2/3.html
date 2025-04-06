@@ -1,0 +1,27 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="our-element">Our Element</div>
+    <p>Paragraph</p>
+    <script>
+        document.getElementsByTagName("p")[0].remove();
+        let div = document.querySelector(".our-element") ;
+        let sp1 = document.createElement("div") ; 
+        sp1.textContent = "Start" ; 
+        sp1.classList = "Start" ; 
+        sp1.title = "Start Element" ; 
+        sp1.setAttribute("data-value", "Start Element")  ; 
+        let sp2 = document.createElement("div") ; 
+        sp2.textContent = "End" ; 
+        sp2.classList = "End" ; 
+        sp2.title = "End Element" ; 
+        sp2.setAttribute("data-value", "End Element")  ; 
+        document.body.prepend(sp1)  ; 
+        document.body.append(sp2)  ; 
+    </script>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+let elmentOne = document.querySelector(".one") ; 
+let elmentTwo = document.querySelector(".two") ; 
+saveAtt2 = elmentOne.getAttribute("title") ; 
+saveAtt1 = elmentTwo.getAttribute("title") ; 
+console.log(saveAtt1) ; 
+console.log(saveAtt2) ; 
+elmentOne.setAttribute("title",saveAtt1) ; 
+elmentTwo.setAttribute("title",saveAtt2) ; 
+elmentOne.textContent = saveAtt1 ; 
+elmentTwo.textContent = saveAtt2 + " "+elmentOne.attributes.length ; 

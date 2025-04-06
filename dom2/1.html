@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Learn JavaScript</title>
+    <script>
+      let lien = document.getElementsByTagName("a");
+      for (let i = 0; i < lien.length; i++) {
+        let att = lien[i].getAttribute("class");
+        console.log(att);
+        lien[i].addEventListener("click", function (event) {
+          if (lien[i].textContent !== "Elzero" || att !== "open") {
+            event.preventDefault();
+          }
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <a class="open" href="https://google.com">Google</a>
+    <a class="open" href="https://elzero.org">Elzero</a>
+    <a class="not" href="https://facebook.com">Facebook</a>
+    <a class="linked" href="https://linkedin.com">Elzero</a>
+    <script src="1.js"></script>
+  </body>
+</html>
