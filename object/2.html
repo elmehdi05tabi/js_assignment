@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Method One
+    let objMethodOne = {
+        property : "hello one"
+    }
+console.log(objMethodOne.property); // "Method One"
+
+// Method Two
+let objMethodTwo  = new Object ( {
+    property : "Hello two" 
+}) ; 
+console.log(objMethodTwo.property); // "Method Two"
+
+// Method Three
+let objMethodThree = Object.create(objMethodOne) ; 
+console.log(objMethodThree.property); // "Method Three"
+
+// Method Four
+let objMethodFour = Object.assign({},objMethodOne) ; 
+console.log(objMethodFour.property); // "Method Four"
+    </script>
+</body>
+</html>
